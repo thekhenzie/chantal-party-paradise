@@ -48,6 +48,7 @@ function confirmBooking() {
         'When: ' + date + '<br>' +
         'Any other requirements: ' + message;
 
+    alert("Customer details submitted");
     document.getElementById("codeInfo").innerHTML = details;
 }
 
