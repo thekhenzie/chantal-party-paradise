@@ -63,7 +63,9 @@ function validateForm() {
     if (x == "1") {
         alert("Customer details submitted");
     }
-
+	else if(x == "v"){
+		alert("Version 2.0");
+	}
     else {
         alert("Nope! You're wrong")
     }
