@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Party Paradise - Registration </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="myscripts.js"></script>
+</head>
+
+<body onload="hideDivs()">
+    <a href="index.html">
+        <img src="logo.png" alt="Party Paradise" height="164" width="124">
+    </a>
+    <ul id="navigation">
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="services.html"> Services </a> </li>
+        <li> <a href="faq.html"> FAQ </a> </li>
+    </ul>
+    <h1> Registrations </h1>
+    <h3> Parties for hire</h3>
+
+    <div id="divDetails">
+        <form name="formDetails">
+            <h4>First Name of Host</h4>
+            <input type='text' name='firstnameofhost'>
+            <h4>Last Name of Host</h4>
+            <input type='text' name='lastnameofhost'>
+            <h4>Host's Email</h4>
+            <input type='text' name='hostemail'>
+            <h4> Host's Phone Number</h4>
+            <input type='text' name='hostphonenumber'>
+            <h4> Host's Bank Account Number</h4>
+            <input type='text' name='hostbankaccountnumber'>
+            <h4> P.O Box</h4>
+            <input type='text' name='pobox'>
+            <h4> Address</h4>
+            <input type='text' name='address'><br /><br />
+        </form>
+        <button onclick="bookNow()">Book Now</button>
+    </div>
+
+    <code id="codeDetails"></code>
+
+    <div id="divInfo">
+        <form name="formInfo">
+            <h4> Target's First and Last Name</h4>
+            <textarea name='name' rows='2' cols='30' placeholder="Enter First and Last name of Target.."></textarea>
+
+            <h4>Target:</h4>
+            <input type="radio" name="gender" value="Boy" checked> Boy <br>
+            <input type="radio" name="gender" value="Girl"> Girl<br>
+            <input type="radio" name="gender" value="Half and half"> Half and half<br>
+
+            <h4> Age of target</h4>
+            <select name='age'>
+                <option value='0-2'>0-2</option>
+                <option value='3-5'>3-5</option>
+                <option value='6-8'>6-8</option>
+                <option value='9-11'>9-11</option>
+                <option value='12-14'>12-14</option>
+                <option value='15-17'>15-17</option>
+                <option value='18-20'>18-20</option>
+            </select>
+
+            <h4> Kind of party</h4>
+            <select name='party'>
+                <option value='Spongebob Party'>Spongebob Party</option>
+                <option value='Race car party'>Race car Party</option>
+                <option value='Disney party'>Disney Party</option>
+                <option value='Superhero Party'>Superhero Party</option>
+                <option value='Princess Party'>Princess Party</option>
+                <option value='Star wars costume party'>Star Wars Costume party</option>
+                <option value='Marvel Costume Party'>Marvel Costume Party</option>
+                <option value='Army Party'>Army Party</option>
+                <option value='Fuzzy Animal Party'>Fuzzy Animal Party</option>
+                <option value='Zoo Party'>Zoo Party</option>
+                <option value='Playland Party'>Playland Party</option>
+                <option value='Halloween Party'>Halloween Party</option>
+                <option value='Movie Party'>Movie Party</option>
+                <option value='Paintball Party'>Paintball Party</option>
+                <option value='War Party'>War Party</option>
+                <option value='Magic Party'>Magic Party</option>
+                <option value='Dance Party'>Dance Party</option>
+                <option value='Christmas Party'>Christmas Party</option>
+            </select>
+
+            <h4> Number of Guests</h4>
+            <input type='text' name='numberofguests'>
+            <h4> Where: </h4>
+            <p><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d383944.74520919396!2d174.75425765000003!3d-41.25296014999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38b1fc49e974cb%3A0xa00ef63a213b470!2sWellington!5e0!3m2!1sen!2snz!4v1696556620474!5m2!1sen!2snz"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+            <h4> When: </h4>
+            <input type="date" name="date" min="2023-11-1" max="2025-11-1">
+
+            <h4> Any other requirements </h4>
+            <textarea name='message' rows='5' cols='30' placeholder="Type here.."></textarea>
+        </form>
+        <p>PARTY PARADISE</p>
+        <button onclick="confirmBooking()">Let's set up the party</button>
+    </div>
+
+    <br />
+    <code id="codeInfo"></code>
+    <h3 id="output"></h3>
+
+</body>
+
+</html>
